@@ -1,8 +1,8 @@
 #include<iostream>
 
-using namespace std;
-
-
+using std::cout;
+using std::cint;
+using std::endl;
 
 int main()
 {
@@ -13,22 +13,22 @@ int main()
 	double procent_in_one_month;
 	double procent_all_months;
 
-	cout << " ââåäèòå ñóìó äåïîçèòà  : " << endl;
+	cout << " Ã¢Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã±Ã³Ã¬Ã³ Ã¤Ã¥Ã¯Ã®Ã§Ã¨Ã²Ã   : " << endl;
 	cin >> sum_deposit;
-	cout << "ââåäèòå êîëè÷åñòâî ìåñÿöåâ : " << endl;
+	cout << "Ã¢Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã¬Ã¥Ã±Ã¿Ã¶Ã¥Ã¢ : " << endl;
 	cin >> koll_months;
 
 	procent_in_one_month = sum_deposit * (PROCENT_IN_YEAR) / 365 * 30;
 
-	cout <<"ïðèáûëü â ìåñÿö ñîñòîâëÿåò : "<< procent_in_one_month << endl;
+	cout <<"Ã¯Ã°Ã¨Ã¡Ã»Ã«Ã¼ Ã¢ Ã¬Ã¥Ã±Ã¿Ã¶ Ã±Ã®Ã±Ã²Ã®Ã¢Ã«Ã¿Ã¥Ã² : "<< procent_in_one_month << endl;
 
 	procent_all_months = koll_months * procent_in_one_month;
 
 	
-	cout << "ïðèáûëü çà âñå ìåñÿöû ñîñòîâëÿåò : " << procent_all_months << endl;
+	cout << "Ã¯Ã°Ã¨Ã¡Ã»Ã«Ã¼ Ã§Ã  Ã¢Ã±Ã¥ Ã¬Ã¥Ã±Ã¿Ã¶Ã» Ã±Ã®Ã±Ã²Ã®Ã¢Ã«Ã¿Ã¥Ã² : " << procent_all_months << endl;
 
 	
-	cout << "èòîãî âûõîæèò : " <<procent_all_months + sum_deposit;
+	cout << "Ã¨Ã²Ã®Ã£Ã® Ã¢Ã»ÃµÃ®Ã¦Ã¨Ã² : " <<procent_all_months + sum_deposit;
 
     
 	system("pause");
